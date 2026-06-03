@@ -245,7 +245,7 @@
         "Data": {
           "$id": "46",
           "$type": "VRBuilder.Core.Step+EntityData, VRBuilder.Core",
-          "Name": "Step",
+          "Name": "Step1-instructionset",
           "Description": null,
           "Behaviors": {
             "$id": "47",
@@ -259,15 +259,32 @@
                 "$values": [
                   {
                     "$id": "50",
-                    "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior, VRBuilder.Core",
+                    "$type": "VRBuilder.Core.Behaviors.PlayAudioBehavior, VRBuilder.Core",
                     "Data": {
                       "$id": "51",
+                      "$type": "VRBuilder.Core.Behaviors.PlayAudioBehavior+EntityData, VRBuilder.Core",
+                      "AudioData": {
+                        "$id": "52",
+                        "$type": "VRBuilder.Core.Utils.Audio.ResourceAudio, VRBuilder.Core",
+                        "ResourcesPath": "this is test"
+                      },
+                      "ExecutionStages": 1,
+                      "Volume": 1.0,
+                      "Metadata": null,
+                      "IsBlocking": true
+                    }
+                  },
+                  {
+                    "$id": "53",
+                    "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior, VRBuilder.Core",
+                    "Data": {
+                      "$id": "54",
                       "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior+EntityData, VRBuilder.Core",
                       "TargetObjects": {
-                        "$id": "52",
+                        "$id": "55",
                         "$type": "VRBuilder.Core.SceneObjects.MultipleSceneObjectReference, VRBuilder.Core",
                         "guids": {
-                          "$id": "53",
+                          "$id": "56",
                           "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
                           "$values": [
                             "aafd3424-c372-4b92-8ec5-76772a7eaf04"
@@ -277,23 +294,6 @@
                       "SetEnabled": true,
                       "RevertOnDeactivation": false,
                       "Metadata": null
-                    }
-                  },
-                  {
-                    "$id": "54",
-                    "$type": "VRBuilder.Core.Behaviors.PlayAudioBehavior, VRBuilder.Core",
-                    "Data": {
-                      "$id": "55",
-                      "$type": "VRBuilder.Core.Behaviors.PlayAudioBehavior+EntityData, VRBuilder.Core",
-                      "AudioData": {
-                        "$id": "56",
-                        "$type": "VRBuilder.Core.Utils.Audio.ResourceAudio, VRBuilder.Core",
-                        "ResourcesPath": "Step 1 : Hi! Welcome to the Air Cooler User Guide. To get started, please plug the air cooler into a power outlet. Press OK when you're ready to continue. "
-                      },
-                      "ExecutionStages": 1,
-                      "Volume": 1.0,
-                      "Metadata": null,
-                      "IsBlocking": true
                     }
                   },
                   {
@@ -472,11 +472,11 @@
           "$id": "88",
           "$type": "VRBuilder.Core.StepMetadata, VRBuilder.Core",
           "Position": {
-            "x": 163.2,
-            "y": -88.8
+            "x": 143.2,
+            "y": -176.0
           },
           "StepType": "default",
-          "Guid": "e06bf158-b46a-49b3-9b4c-c560911b5e5c"
+          "Guid": "df9375d6-7947-4c3a-be46-bb4f2ff69e92"
         },
         "Data": {
           "$id": "89",
@@ -495,42 +495,42 @@
                 "$values": [
                   {
                     "$id": "93",
-                    "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior, VRBuilder.Core",
-                    "Data": {
-                      "$id": "94",
-                      "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior+EntityData, VRBuilder.Core",
-                      "TargetObjects": {
-                        "$id": "95",
-                        "$type": "VRBuilder.Core.SceneObjects.MultipleSceneObjectReference, VRBuilder.Core",
-                        "guids": {
-                          "$id": "96",
-                          "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
-                          "$values": [
-                            "da3f7b77-d6d7-4f2f-b868-a4a443f0f23f"
-                          ]
-                        }
-                      },
-                      "SetEnabled": true,
-                      "RevertOnDeactivation": true,
-                      "Metadata": null
-                    }
-                  },
-                  {
-                    "$id": "97",
                     "$type": "VRBuilder.Core.Behaviors.PlayAudioBehavior, VRBuilder.Core",
                     "Data": {
-                      "$id": "98",
+                      "$id": "94",
                       "$type": "VRBuilder.Core.Behaviors.PlayAudioBehavior+EntityData, VRBuilder.Core",
                       "AudioData": {
-                        "$id": "99",
+                        "$id": "95",
                         "$type": "VRBuilder.Core.TextToSpeech.TextToSpeechAudio, VRBuilder.Core",
-                        "Text": "At the front of the cooler, you can see the air vents.  Air flows out through these vents into the room.  ",
+                        "Text": "Hi! Welcome to the Air Cooler User Guide. To get started, please plug the air cooler into a power outlet. Press OK when you're ready to continue. ",
                         "Speaker": ""
                       },
                       "ExecutionStages": 1,
                       "Volume": 1.0,
                       "Metadata": null,
                       "IsBlocking": true
+                    }
+                  },
+                  {
+                    "$id": "96",
+                    "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior, VRBuilder.Core",
+                    "Data": {
+                      "$id": "97",
+                      "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior+EntityData, VRBuilder.Core",
+                      "TargetObjects": {
+                        "$id": "98",
+                        "$type": "VRBuilder.Core.SceneObjects.MultipleSceneObjectReference, VRBuilder.Core",
+                        "guids": {
+                          "$id": "99",
+                          "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
+                          "$values": [
+                            "ceb27401-ba7a-41a9-b8df-fa90a5fd7057"
+                          ]
+                        }
+                      },
+                      "SetEnabled": false,
+                      "RevertOnDeactivation": false,
+                      "Metadata": null
                     }
                   },
                   {
@@ -546,7 +546,7 @@
                           "$id": "103",
                           "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
                           "$values": [
-                            "dea85a10-4fc7-4a0c-9847-e0d4a33c6267"
+                            "aafd3424-c372-4b92-8ec5-76772a7eaf04"
                           ]
                         }
                       },
@@ -580,55 +580,177 @@
                         "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.Conditions.ICondition, VRBuilder.Core]], mscorlib",
                         "$values": []
                       },
-                      "TargetStep": {
-                        "$id": "110",
-                        "$type": "VRBuilder.Core.Serialization.NewtonsoftJsonProcessSerializerV4+Wrapper+StepRef, VRBuilder.Core",
-                        "LifeCycle": null,
-                        "StepMetadata": {
-                          "$id": "111",
-                          "$type": "VRBuilder.Core.StepMetadata, VRBuilder.Core",
-                          "Position": {
-                            "x": 0.0,
-                            "y": 0.0
-                          },
-                          "StepType": null,
-                          "Guid": "f9df73fa-3219-4bd3-8ef2-a0b2a651d3f4"
-                        },
-                        "Parent": null
+                      "TargetStep": null,
+                      "Mode": null,
+                      "IsCompleted": false,
+                      "Metadata": null
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "Mode": null,
+          "ToUnlock": {
+            "$id": "110",
+            "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.RestrictiveEnvironment.LockablePropertyReference, VRBuilder.Core]], mscorlib",
+            "$values": []
+          },
+          "GroupsToUnlock": {
+            "$id": "111",
+            "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, mscorlib],[System.Collections.Generic.IEnumerable`1[[System.Type, mscorlib]], mscorlib]], mscorlib"
+          },
+          "Metadata": null
+        }
+      },
+      {
+        "$id": "112",
+        "$type": "VRBuilder.Core.Step, VRBuilder.Core",
+        "StepMetadata": {
+          "$id": "113",
+          "$type": "VRBuilder.Core.StepMetadata, VRBuilder.Core",
+          "Position": {
+            "x": 409.6,
+            "y": -355.2
+          },
+          "StepType": "default",
+          "Guid": "e06bf158-b46a-49b3-9b4c-c560911b5e5c"
+        },
+        "Data": {
+          "$id": "114",
+          "$type": "VRBuilder.Core.Step+EntityData, VRBuilder.Core",
+          "Name": "Step",
+          "Description": null,
+          "Behaviors": {
+            "$id": "115",
+            "$type": "VRBuilder.Core.BehaviorCollection, VRBuilder.Core",
+            "Data": {
+              "$id": "116",
+              "$type": "VRBuilder.Core.BehaviorCollection+EntityData, VRBuilder.Core",
+              "Behaviors": {
+                "$id": "117",
+                "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.Behaviors.IBehavior, VRBuilder.Core]], mscorlib",
+                "$values": [
+                  {
+                    "$id": "118",
+                    "$type": "VRBuilder.Core.Behaviors.PlayAudioBehavior, VRBuilder.Core",
+                    "Data": {
+                      "$id": "119",
+                      "$type": "VRBuilder.Core.Behaviors.PlayAudioBehavior+EntityData, VRBuilder.Core",
+                      "AudioData": {
+                        "$id": "120",
+                        "$type": "VRBuilder.Core.Utils.Audio.ResourceAudio, VRBuilder.Core",
+                        "ResourcesPath": "At the front of the cooler, you can see the air vents.  Air flows out through these vents into the room.  "
                       },
+                      "ExecutionStages": 1,
+                      "Volume": 1.0,
+                      "Metadata": null,
+                      "IsBlocking": true
+                    }
+                  },
+                  {
+                    "$id": "121",
+                    "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior, VRBuilder.Core",
+                    "Data": {
+                      "$id": "122",
+                      "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior+EntityData, VRBuilder.Core",
+                      "TargetObjects": {
+                        "$id": "123",
+                        "$type": "VRBuilder.Core.SceneObjects.MultipleSceneObjectReference, VRBuilder.Core",
+                        "guids": {
+                          "$id": "124",
+                          "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
+                          "$values": [
+                            "da3f7b77-d6d7-4f2f-b868-a4a443f0f23f"
+                          ]
+                        }
+                      },
+                      "SetEnabled": true,
+                      "RevertOnDeactivation": true,
+                      "Metadata": null
+                    }
+                  },
+                  {
+                    "$id": "125",
+                    "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior, VRBuilder.Core",
+                    "Data": {
+                      "$id": "126",
+                      "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior+EntityData, VRBuilder.Core",
+                      "TargetObjects": {
+                        "$id": "127",
+                        "$type": "VRBuilder.Core.SceneObjects.MultipleSceneObjectReference, VRBuilder.Core",
+                        "guids": {
+                          "$id": "128",
+                          "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
+                          "$values": [
+                            "dea85a10-4fc7-4a0c-9847-e0d4a33c6267"
+                          ]
+                        }
+                      },
+                      "SetEnabled": true,
+                      "RevertOnDeactivation": true,
+                      "Metadata": null
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "Transitions": {
+            "$id": "129",
+            "$type": "VRBuilder.Core.TransitionCollection, VRBuilder.Core",
+            "Data": {
+              "$id": "130",
+              "$type": "VRBuilder.Core.TransitionCollection+EntityData, VRBuilder.Core",
+              "Transitions": {
+                "$id": "131",
+                "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.ITransition, VRBuilder.Core]], mscorlib",
+                "$values": [
+                  {
+                    "$id": "132",
+                    "$type": "VRBuilder.Core.Transition, VRBuilder.Core",
+                    "Data": {
+                      "$id": "133",
+                      "$type": "VRBuilder.Core.Transition+EntityData, VRBuilder.Core",
+                      "Conditions": {
+                        "$id": "134",
+                        "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.Conditions.ICondition, VRBuilder.Core]], mscorlib",
+                        "$values": []
+                      },
+                      "TargetStep": null,
                       "Mode": null,
                       "IsCompleted": false,
                       "Metadata": {
-                        "$id": "112",
+                        "$id": "135",
                         "$type": "VRBuilder.Core.Metadata, VRBuilder.Core",
                         "values": {
-                          "$id": "113",
+                          "$id": "136",
                           "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib]], mscorlib",
                           "Conditions": {
-                            "$id": "114",
+                            "$id": "137",
                             "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
                             "VRBuilder.Core.Attributes.FoldableAttribute": true,
                             "VRBuilder.Core.Attributes.ReorderableListOfAttribute": {
-                              "$id": "115",
+                              "$id": "138",
                               "$type": "VRBuilder.Core.Attributes.ListOfAttribute+Metadata, VRBuilder.Core",
                               "ChildAttributes": {
-                                "$id": "116",
+                                "$id": "139",
                                 "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.Attributes.MetadataAttribute, VRBuilder.Core]], mscorlib",
                                 "$values": [
                                   {
-                                    "$id": "117",
+                                    "$id": "140",
                                     "$type": "VRBuilder.Core.Attributes.FoldableAttribute, VRBuilder.Core",
                                     "Name": "VRBuilder.Core.Attributes.FoldableAttribute",
                                     "TypeId": "VRBuilder.Core.Attributes.FoldableAttribute, VRBuilder.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                                   },
                                   {
-                                    "$id": "118",
+                                    "$id": "141",
                                     "$type": "VRBuilder.Core.Attributes.HelpAttribute, VRBuilder.Core",
                                     "Name": "VRBuilder.Core.Attributes.HelpAttribute",
                                     "TypeId": "VRBuilder.Core.Attributes.HelpAttribute, VRBuilder.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                                   },
                                   {
-                                    "$id": "119",
+                                    "$id": "142",
                                     "$type": "VRBuilder.Core.Attributes.MenuAttribute, VRBuilder.Core",
                                     "Name": "VRBuilder.Core.Attributes.MenuAttribute",
                                     "TypeId": "VRBuilder.Core.Attributes.MenuAttribute, VRBuilder.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
@@ -636,13 +758,13 @@
                                 ]
                               },
                               "ChildMetadata": {
-                                "$id": "120",
+                                "$id": "143",
                                 "$type": "System.Collections.Generic.List`1[[System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib]], mscorlib",
                                 "$values": []
                               }
                             },
                             "VRBuilder.Core.Attributes.ExtendableListAttribute": {
-                              "$id": "121",
+                              "$id": "144",
                               "$type": "VRBuilder.Core.Attributes.ExtendableListAttribute+SerializedTypeWrapper, VRBuilder.Core",
                               "Type": "VRBuilder.Core.Conditions.ICondition, VRBuilder.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                             }
@@ -657,22 +779,22 @@
           },
           "Mode": null,
           "ToUnlock": {
-            "$id": "122",
+            "$id": "145",
             "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.RestrictiveEnvironment.LockablePropertyReference, VRBuilder.Core]], mscorlib",
             "$values": []
           },
           "GroupsToUnlock": {
-            "$id": "123",
+            "$id": "146",
             "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, mscorlib],[System.Collections.Generic.IEnumerable`1[[System.Type, mscorlib]], mscorlib]], mscorlib"
           },
           "Metadata": null
         }
       },
       {
-        "$id": "124",
+        "$id": "147",
         "$type": "VRBuilder.Core.Step, VRBuilder.Core",
         "StepMetadata": {
-          "$id": "125",
+          "$id": "148",
           "$type": "VRBuilder.Core.StepMetadata, VRBuilder.Core",
           "Position": {
             "x": 120.0,
@@ -682,31 +804,31 @@
           "Guid": "9fd490a0-f39d-4881-b011-6d939be56f4e"
         },
         "Data": {
-          "$id": "126",
+          "$id": "149",
           "$type": "VRBuilder.Core.Step+EntityData, VRBuilder.Core",
           "Name": "Step",
           "Description": null,
           "Behaviors": {
-            "$id": "127",
+            "$id": "150",
             "$type": "VRBuilder.Core.BehaviorCollection, VRBuilder.Core",
             "Data": {
-              "$id": "128",
+              "$id": "151",
               "$type": "VRBuilder.Core.BehaviorCollection+EntityData, VRBuilder.Core",
               "Behaviors": {
-                "$id": "129",
+                "$id": "152",
                 "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.Behaviors.IBehavior, VRBuilder.Core]], mscorlib",
                 "$values": [
                   {
-                    "$id": "130",
+                    "$id": "153",
                     "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior, VRBuilder.Core",
                     "Data": {
-                      "$id": "131",
+                      "$id": "154",
                       "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior+EntityData, VRBuilder.Core",
                       "TargetObjects": {
-                        "$id": "132",
+                        "$id": "155",
                         "$type": "VRBuilder.Core.SceneObjects.MultipleSceneObjectReference, VRBuilder.Core",
                         "guids": {
-                          "$id": "133",
+                          "$id": "156",
                           "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
                           "$values": [
                             "0070c0bc-0eb8-4c7d-9653-9c6dc0102c5c"
@@ -719,13 +841,13 @@
                     }
                   },
                   {
-                    "$id": "134",
+                    "$id": "157",
                     "$type": "VRBuilder.Core.Behaviors.PlayAudioBehavior, VRBuilder.Core",
                     "Data": {
-                      "$id": "135",
+                      "$id": "158",
                       "$type": "VRBuilder.Core.Behaviors.PlayAudioBehavior+EntityData, VRBuilder.Core",
                       "AudioData": {
-                        "$id": "136",
+                        "$id": "159",
                         "$type": "VRBuilder.Core.TextToSpeech.TextToSpeechAudio, VRBuilder.Core",
                         "Text": "Moving onto Step 2. When you plug the cooler, Inside the cooler, a motor spins the fan.  ",
                         "Speaker": ""
@@ -737,16 +859,16 @@
                     }
                   },
                   {
-                    "$id": "137",
+                    "$id": "160",
                     "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior, VRBuilder.Core",
                     "Data": {
-                      "$id": "138",
+                      "$id": "161",
                       "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior+EntityData, VRBuilder.Core",
                       "TargetObjects": {
-                        "$id": "139",
+                        "$id": "162",
                         "$type": "VRBuilder.Core.SceneObjects.MultipleSceneObjectReference, VRBuilder.Core",
                         "guids": {
-                          "$id": "140",
+                          "$id": "163",
                           "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
                           "$values": [
                             "a82de854-b84b-4e6f-b589-fefda2321ba0"
@@ -759,16 +881,16 @@
                     }
                   },
                   {
-                    "$id": "141",
+                    "$id": "164",
                     "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior, VRBuilder.Core",
                     "Data": {
-                      "$id": "142",
+                      "$id": "165",
                       "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior+EntityData, VRBuilder.Core",
                       "TargetObjects": {
-                        "$id": "143",
+                        "$id": "166",
                         "$type": "VRBuilder.Core.SceneObjects.MultipleSceneObjectReference, VRBuilder.Core",
                         "guids": {
-                          "$id": "144",
+                          "$id": "167",
                           "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
                           "$values": [
                             "aafd3424-c372-4b92-8ec5-76772a7eaf04"
@@ -781,16 +903,16 @@
                     }
                   },
                   {
-                    "$id": "145",
+                    "$id": "168",
                     "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior, VRBuilder.Core",
                     "Data": {
-                      "$id": "146",
+                      "$id": "169",
                       "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior+EntityData, VRBuilder.Core",
                       "TargetObjects": {
-                        "$id": "147",
+                        "$id": "170",
                         "$type": "VRBuilder.Core.SceneObjects.MultipleSceneObjectReference, VRBuilder.Core",
                         "guids": {
-                          "$id": "148",
+                          "$id": "171",
                           "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
                           "$values": [
                             "4d634649-d3bc-49c1-9e00-91527fc87655"
@@ -807,75 +929,75 @@
             }
           },
           "Transitions": {
-            "$id": "149",
+            "$id": "172",
             "$type": "VRBuilder.Core.TransitionCollection, VRBuilder.Core",
             "Data": {
-              "$id": "150",
+              "$id": "173",
               "$type": "VRBuilder.Core.TransitionCollection+EntityData, VRBuilder.Core",
               "Transitions": {
-                "$id": "151",
+                "$id": "174",
                 "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.ITransition, VRBuilder.Core]], mscorlib",
                 "$values": [
                   {
-                    "$id": "152",
+                    "$id": "175",
                     "$type": "VRBuilder.Core.Transition, VRBuilder.Core",
                     "Data": {
-                      "$id": "153",
+                      "$id": "176",
                       "$type": "VRBuilder.Core.Transition+EntityData, VRBuilder.Core",
                       "Conditions": {
-                        "$id": "154",
+                        "$id": "177",
                         "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.Conditions.ICondition, VRBuilder.Core]], mscorlib",
                         "$values": []
                       },
                       "TargetStep": {
-                        "$id": "155",
+                        "$id": "178",
                         "$type": "VRBuilder.Core.Serialization.NewtonsoftJsonProcessSerializerV4+Wrapper+StepRef, VRBuilder.Core",
                         "LifeCycle": null,
                         "StepMetadata": {
-                          "$id": "156",
+                          "$id": "179",
                           "$type": "VRBuilder.Core.StepMetadata, VRBuilder.Core",
                           "Position": {
                             "x": 0.0,
                             "y": 0.0
                           },
                           "StepType": null,
-                          "Guid": "e06bf158-b46a-49b3-9b4c-c560911b5e5c"
+                          "Guid": "72c0870e-b97e-4aa2-9441-a54c3239564c"
                         },
                         "Parent": null
                       },
                       "Mode": null,
                       "IsCompleted": false,
                       "Metadata": {
-                        "$id": "157",
+                        "$id": "180",
                         "$type": "VRBuilder.Core.Metadata, VRBuilder.Core",
                         "values": {
-                          "$id": "158",
+                          "$id": "181",
                           "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib]], mscorlib",
                           "Conditions": {
-                            "$id": "159",
+                            "$id": "182",
                             "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
                             "VRBuilder.Core.Attributes.FoldableAttribute": true,
                             "VRBuilder.Core.Attributes.ReorderableListOfAttribute": {
-                              "$id": "160",
+                              "$id": "183",
                               "$type": "VRBuilder.Core.Attributes.ListOfAttribute+Metadata, VRBuilder.Core",
                               "ChildAttributes": {
-                                "$id": "161",
+                                "$id": "184",
                                 "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.Attributes.MetadataAttribute, VRBuilder.Core]], mscorlib",
                                 "$values": [
                                   {
-                                    "$id": "162",
+                                    "$id": "185",
                                     "$type": "VRBuilder.Core.Attributes.FoldableAttribute, VRBuilder.Core",
                                     "Name": "VRBuilder.Core.Attributes.FoldableAttribute",
                                     "TypeId": "VRBuilder.Core.Attributes.FoldableAttribute, VRBuilder.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                                   },
                                   {
-                                    "$id": "163",
+                                    "$id": "186",
                                     "$type": "VRBuilder.Core.Attributes.HelpAttribute, VRBuilder.Core",
                                     "Name": "VRBuilder.Core.Attributes.HelpAttribute",
                                     "TypeId": "VRBuilder.Core.Attributes.HelpAttribute, VRBuilder.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                                   },
                                   {
-                                    "$id": "164",
+                                    "$id": "187",
                                     "$type": "VRBuilder.Core.Attributes.MenuAttribute, VRBuilder.Core",
                                     "Name": "VRBuilder.Core.Attributes.MenuAttribute",
                                     "TypeId": "VRBuilder.Core.Attributes.MenuAttribute, VRBuilder.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
@@ -883,13 +1005,13 @@
                                 ]
                               },
                               "ChildMetadata": {
-                                "$id": "165",
+                                "$id": "188",
                                 "$type": "System.Collections.Generic.List`1[[System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib]], mscorlib",
                                 "$values": []
                               }
                             },
                             "VRBuilder.Core.Attributes.ExtendableListAttribute": {
-                              "$id": "166",
+                              "$id": "189",
                               "$type": "VRBuilder.Core.Attributes.ExtendableListAttribute+SerializedTypeWrapper, VRBuilder.Core",
                               "Type": "VRBuilder.Core.Conditions.ICondition, VRBuilder.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                             }
@@ -904,22 +1026,22 @@
           },
           "Mode": null,
           "ToUnlock": {
-            "$id": "167",
+            "$id": "190",
             "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.RestrictiveEnvironment.LockablePropertyReference, VRBuilder.Core]], mscorlib",
             "$values": []
           },
           "GroupsToUnlock": {
-            "$id": "168",
+            "$id": "191",
             "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, mscorlib],[System.Collections.Generic.IEnumerable`1[[System.Type, mscorlib]], mscorlib]], mscorlib"
           },
           "Metadata": null
         }
       },
       {
-        "$id": "169",
+        "$id": "192",
         "$type": "VRBuilder.Core.Step, VRBuilder.Core",
         "StepMetadata": {
-          "$id": "170",
+          "$id": "193",
           "$type": "VRBuilder.Core.StepMetadata, VRBuilder.Core",
           "Position": {
             "x": 120.0,
@@ -929,31 +1051,31 @@
           "Guid": "f9df73fa-3219-4bd3-8ef2-a0b2a651d3f4"
         },
         "Data": {
-          "$id": "171",
+          "$id": "194",
           "$type": "VRBuilder.Core.Step+EntityData, VRBuilder.Core",
           "Name": "Step",
           "Description": null,
           "Behaviors": {
-            "$id": "172",
+            "$id": "195",
             "$type": "VRBuilder.Core.BehaviorCollection, VRBuilder.Core",
             "Data": {
-              "$id": "173",
+              "$id": "196",
               "$type": "VRBuilder.Core.BehaviorCollection+EntityData, VRBuilder.Core",
               "Behaviors": {
-                "$id": "174",
+                "$id": "197",
                 "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.Behaviors.IBehavior, VRBuilder.Core]], mscorlib",
                 "$values": [
                   {
-                    "$id": "175",
+                    "$id": "198",
                     "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior, VRBuilder.Core",
                     "Data": {
-                      "$id": "176",
+                      "$id": "199",
                       "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior+EntityData, VRBuilder.Core",
                       "TargetObjects": {
-                        "$id": "177",
+                        "$id": "200",
                         "$type": "VRBuilder.Core.SceneObjects.MultipleSceneObjectReference, VRBuilder.Core",
                         "guids": {
-                          "$id": "178",
+                          "$id": "201",
                           "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
                           "$values": [
                             "e920c83e-4c6f-4d61-936f-bc232dbe1f5a"
@@ -966,13 +1088,13 @@
                     }
                   },
                   {
-                    "$id": "179",
+                    "$id": "202",
                     "$type": "VRBuilder.Core.Behaviors.PlayAudioBehavior, VRBuilder.Core",
                     "Data": {
-                      "$id": "180",
+                      "$id": "203",
                       "$type": "VRBuilder.Core.Behaviors.PlayAudioBehavior+EntityData, VRBuilder.Core",
                       "AudioData": {
-                        "$id": "181",
+                        "$id": "204",
                         "$type": "VRBuilder.Core.TextToSpeech.TextToSpeechAudio, VRBuilder.Core",
                         "Text": "As the fan spins, it pushes air through the cooler and out of the front vents.  This creates a steady flow of air into your room.  ",
                         "Speaker": ""
@@ -984,16 +1106,16 @@
                     }
                   },
                   {
-                    "$id": "182",
+                    "$id": "205",
                     "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior, VRBuilder.Core",
                     "Data": {
-                      "$id": "183",
+                      "$id": "206",
                       "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior+EntityData, VRBuilder.Core",
                       "TargetObjects": {
-                        "$id": "184",
+                        "$id": "207",
                         "$type": "VRBuilder.Core.SceneObjects.MultipleSceneObjectReference, VRBuilder.Core",
                         "guids": {
-                          "$id": "185",
+                          "$id": "208",
                           "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
                           "$values": [
                             "1d6f6223-fc23-490d-9b1e-70aa98ede7c4"
@@ -1006,16 +1128,16 @@
                     }
                   },
                   {
-                    "$id": "186",
+                    "$id": "209",
                     "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior, VRBuilder.Core",
                     "Data": {
-                      "$id": "187",
+                      "$id": "210",
                       "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior+EntityData, VRBuilder.Core",
                       "TargetObjects": {
-                        "$id": "188",
+                        "$id": "211",
                         "$type": "VRBuilder.Core.SceneObjects.MultipleSceneObjectReference, VRBuilder.Core",
                         "guids": {
-                          "$id": "189",
+                          "$id": "212",
                           "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
                           "$values": [
                             "dea85a10-4fc7-4a0c-9847-e0d4a33c6267"
@@ -1032,23 +1154,23 @@
             }
           },
           "Transitions": {
-            "$id": "190",
+            "$id": "213",
             "$type": "VRBuilder.Core.TransitionCollection, VRBuilder.Core",
             "Data": {
-              "$id": "191",
+              "$id": "214",
               "$type": "VRBuilder.Core.TransitionCollection+EntityData, VRBuilder.Core",
               "Transitions": {
-                "$id": "192",
+                "$id": "215",
                 "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.ITransition, VRBuilder.Core]], mscorlib",
                 "$values": [
                   {
-                    "$id": "193",
+                    "$id": "216",
                     "$type": "VRBuilder.Core.Transition, VRBuilder.Core",
                     "Data": {
-                      "$id": "194",
+                      "$id": "217",
                       "$type": "VRBuilder.Core.Transition+EntityData, VRBuilder.Core",
                       "Conditions": {
-                        "$id": "195",
+                        "$id": "218",
                         "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.Conditions.ICondition, VRBuilder.Core]], mscorlib",
                         "$values": []
                       },
@@ -1064,22 +1186,175 @@
           },
           "Mode": null,
           "ToUnlock": {
-            "$id": "196",
+            "$id": "219",
             "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.RestrictiveEnvironment.LockablePropertyReference, VRBuilder.Core]], mscorlib",
             "$values": []
           },
           "GroupsToUnlock": {
-            "$id": "197",
+            "$id": "220",
             "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, mscorlib],[System.Collections.Generic.IEnumerable`1[[System.Type, mscorlib]], mscorlib]], mscorlib"
           },
           "Metadata": null
         }
       },
       {
-        "$id": "198",
+        "$id": "221",
         "$type": "VRBuilder.Core.Step, VRBuilder.Core",
         "StepMetadata": {
-          "$id": "199",
+          "$id": "222",
+          "$type": "VRBuilder.Core.StepMetadata, VRBuilder.Core",
+          "Position": {
+            "x": 120.0,
+            "y": -127.2
+          },
+          "StepType": "default",
+          "Guid": "72c0870e-b97e-4aa2-9441-a54c3239564c"
+        },
+        "Data": {
+          "$id": "223",
+          "$type": "VRBuilder.Core.Step+EntityData, VRBuilder.Core",
+          "Name": "Step",
+          "Description": null,
+          "Behaviors": {
+            "$id": "224",
+            "$type": "VRBuilder.Core.BehaviorCollection, VRBuilder.Core",
+            "Data": {
+              "$id": "225",
+              "$type": "VRBuilder.Core.BehaviorCollection+EntityData, VRBuilder.Core",
+              "Behaviors": {
+                "$id": "226",
+                "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.Behaviors.IBehavior, VRBuilder.Core]], mscorlib",
+                "$values": [
+                  {
+                    "$id": "227",
+                    "$type": "VRBuilder.Core.Behaviors.PlayAudioBehavior, VRBuilder.Core",
+                    "Data": {
+                      "$id": "228",
+                      "$type": "VRBuilder.Core.Behaviors.PlayAudioBehavior+EntityData, VRBuilder.Core",
+                      "AudioData": {
+                        "$id": "229",
+                        "$type": "VRBuilder.Core.TextToSpeech.TextToSpeechAudio, VRBuilder.Core",
+                        "Text": "At the front of the cooler, you can see the air vents.  Air flows out through these vents into the room.  ",
+                        "Speaker": ""
+                      },
+                      "ExecutionStages": 1,
+                      "Volume": 1.0,
+                      "Metadata": null,
+                      "IsBlocking": true
+                    }
+                  },
+                  {
+                    "$id": "230",
+                    "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior, VRBuilder.Core",
+                    "Data": {
+                      "$id": "231",
+                      "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior+EntityData, VRBuilder.Core",
+                      "TargetObjects": {
+                        "$id": "232",
+                        "$type": "VRBuilder.Core.SceneObjects.MultipleSceneObjectReference, VRBuilder.Core",
+                        "guids": {
+                          "$id": "233",
+                          "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
+                          "$values": [
+                            "dea85a10-4fc7-4a0c-9847-e0d4a33c6267"
+                          ]
+                        }
+                      },
+                      "SetEnabled": true,
+                      "RevertOnDeactivation": true,
+                      "Metadata": null
+                    }
+                  },
+                  {
+                    "$id": "234",
+                    "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior, VRBuilder.Core",
+                    "Data": {
+                      "$id": "235",
+                      "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior+EntityData, VRBuilder.Core",
+                      "TargetObjects": {
+                        "$id": "236",
+                        "$type": "VRBuilder.Core.SceneObjects.MultipleSceneObjectReference, VRBuilder.Core",
+                        "guids": {
+                          "$id": "237",
+                          "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
+                          "$values": [
+                            "da3f7b77-d6d7-4f2f-b868-a4a443f0f23f"
+                          ]
+                        }
+                      },
+                      "SetEnabled": true,
+                      "RevertOnDeactivation": true,
+                      "Metadata": null
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "Transitions": {
+            "$id": "238",
+            "$type": "VRBuilder.Core.TransitionCollection, VRBuilder.Core",
+            "Data": {
+              "$id": "239",
+              "$type": "VRBuilder.Core.TransitionCollection+EntityData, VRBuilder.Core",
+              "Transitions": {
+                "$id": "240",
+                "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.ITransition, VRBuilder.Core]], mscorlib",
+                "$values": [
+                  {
+                    "$id": "241",
+                    "$type": "VRBuilder.Core.Transition, VRBuilder.Core",
+                    "Data": {
+                      "$id": "242",
+                      "$type": "VRBuilder.Core.Transition+EntityData, VRBuilder.Core",
+                      "Conditions": {
+                        "$id": "243",
+                        "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.Conditions.ICondition, VRBuilder.Core]], mscorlib",
+                        "$values": []
+                      },
+                      "TargetStep": {
+                        "$id": "244",
+                        "$type": "VRBuilder.Core.Serialization.NewtonsoftJsonProcessSerializerV4+Wrapper+StepRef, VRBuilder.Core",
+                        "LifeCycle": null,
+                        "StepMetadata": {
+                          "$id": "245",
+                          "$type": "VRBuilder.Core.StepMetadata, VRBuilder.Core",
+                          "Position": {
+                            "x": 0.0,
+                            "y": 0.0
+                          },
+                          "StepType": null,
+                          "Guid": "f9df73fa-3219-4bd3-8ef2-a0b2a651d3f4"
+                        },
+                        "Parent": null
+                      },
+                      "Mode": null,
+                      "IsCompleted": false,
+                      "Metadata": null
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "Mode": null,
+          "ToUnlock": {
+            "$id": "246",
+            "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.RestrictiveEnvironment.LockablePropertyReference, VRBuilder.Core]], mscorlib",
+            "$values": []
+          },
+          "GroupsToUnlock": {
+            "$id": "247",
+            "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, mscorlib],[System.Collections.Generic.IEnumerable`1[[System.Type, mscorlib]], mscorlib]], mscorlib"
+          },
+          "Metadata": null
+        }
+      },
+      {
+        "$id": "248",
+        "$type": "VRBuilder.Core.Step, VRBuilder.Core",
+        "StepMetadata": {
+          "$id": "249",
           "$type": "VRBuilder.Core.StepMetadata, VRBuilder.Core",
           "Position": {
             "x": 120.0,
@@ -1089,31 +1364,31 @@
           "Guid": "a6c65185-57dc-4beb-bd05-99fe938dfdf1"
         },
         "Data": {
-          "$id": "200",
+          "$id": "250",
           "$type": "VRBuilder.Core.Step+EntityData, VRBuilder.Core",
           "Name": "Step",
           "Description": null,
           "Behaviors": {
-            "$id": "201",
+            "$id": "251",
             "$type": "VRBuilder.Core.BehaviorCollection, VRBuilder.Core",
             "Data": {
-              "$id": "202",
+              "$id": "252",
               "$type": "VRBuilder.Core.BehaviorCollection+EntityData, VRBuilder.Core",
               "Behaviors": {
-                "$id": "203",
+                "$id": "253",
                 "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.Behaviors.IBehavior, VRBuilder.Core]], mscorlib",
                 "$values": [
                   {
-                    "$id": "204",
+                    "$id": "254",
                     "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior, VRBuilder.Core",
                     "Data": {
-                      "$id": "205",
+                      "$id": "255",
                       "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior+EntityData, VRBuilder.Core",
                       "TargetObjects": {
-                        "$id": "206",
+                        "$id": "256",
                         "$type": "VRBuilder.Core.SceneObjects.MultipleSceneObjectReference, VRBuilder.Core",
                         "guids": {
-                          "$id": "207",
+                          "$id": "257",
                           "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
                           "$values": [
                             "708ecaf5-57e5-4adb-b107-ee3ce1038dea"
@@ -1126,13 +1401,13 @@
                     }
                   },
                   {
-                    "$id": "208",
+                    "$id": "258",
                     "$type": "VRBuilder.Core.Behaviors.PlayAudioBehavior, VRBuilder.Core",
                     "Data": {
-                      "$id": "209",
+                      "$id": "259",
                       "$type": "VRBuilder.Core.Behaviors.PlayAudioBehavior+EntityData, VRBuilder.Core",
                       "AudioData": {
-                        "$id": "210",
+                        "$id": "260",
                         "$type": "VRBuilder.Core.TextToSpeech.TextToSpeechAudio, VRBuilder.Core",
                         "Text": "To change the fan speed, grab the knob and turn it . Rotate the knob until it points to the speed you want.  Follow the hand shown on screen as an example.",
                         "Speaker": ""
@@ -1144,16 +1419,16 @@
                     }
                   },
                   {
-                    "$id": "211",
+                    "$id": "261",
                     "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior, VRBuilder.Core",
                     "Data": {
-                      "$id": "212",
+                      "$id": "262",
                       "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior+EntityData, VRBuilder.Core",
                       "TargetObjects": {
-                        "$id": "213",
+                        "$id": "263",
                         "$type": "VRBuilder.Core.SceneObjects.MultipleSceneObjectReference, VRBuilder.Core",
                         "guids": {
-                          "$id": "214",
+                          "$id": "264",
                           "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
                           "$values": [
                             "7f7264a4-5b29-43d8-bd54-53443fabb918"
@@ -1166,16 +1441,16 @@
                     }
                   },
                   {
-                    "$id": "215",
+                    "$id": "265",
                     "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior, VRBuilder.Core",
                     "Data": {
-                      "$id": "216",
+                      "$id": "266",
                       "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior+EntityData, VRBuilder.Core",
                       "TargetObjects": {
-                        "$id": "217",
+                        "$id": "267",
                         "$type": "VRBuilder.Core.SceneObjects.MultipleSceneObjectReference, VRBuilder.Core",
                         "guids": {
-                          "$id": "218",
+                          "$id": "268",
                           "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
                           "$values": [
                             "4362676d-40d5-42a6-b074-ed71240ada65"
@@ -1188,16 +1463,16 @@
                     }
                   },
                   {
-                    "$id": "219",
+                    "$id": "269",
                     "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior, VRBuilder.Core",
                     "Data": {
-                      "$id": "220",
+                      "$id": "270",
                       "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior+EntityData, VRBuilder.Core",
                       "TargetObjects": {
-                        "$id": "221",
+                        "$id": "271",
                         "$type": "VRBuilder.Core.SceneObjects.MultipleSceneObjectReference, VRBuilder.Core",
                         "guids": {
-                          "$id": "222",
+                          "$id": "272",
                           "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
                           "$values": [
                             "4d634649-d3bc-49c1-9e00-91527fc87655"
@@ -1214,30 +1489,129 @@
             }
           },
           "Transitions": {
-            "$id": "223",
+            "$id": "273",
             "$type": "VRBuilder.Core.TransitionCollection, VRBuilder.Core",
             "Data": {
-              "$id": "224",
+              "$id": "274",
               "$type": "VRBuilder.Core.TransitionCollection+EntityData, VRBuilder.Core",
               "Transitions": {
-                "$id": "225",
+                "$id": "275",
                 "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.ITransition, VRBuilder.Core]], mscorlib",
                 "$values": [
                   {
-                    "$id": "226",
+                    "$id": "276",
                     "$type": "VRBuilder.Core.Transition, VRBuilder.Core",
                     "Data": {
-                      "$id": "227",
+                      "$id": "277",
                       "$type": "VRBuilder.Core.Transition+EntityData, VRBuilder.Core",
                       "Conditions": {
-                        "$id": "228",
+                        "$id": "278",
                         "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.Conditions.ICondition, VRBuilder.Core]], mscorlib",
-                        "$values": []
+                        "$values": [
+                          {
+                            "$id": "279",
+                            "$type": "VRBuilder.Core.Conditions.ObjectInColliderCondition, VRBuilder.Core",
+                            "Data": {
+                              "$id": "280",
+                              "$type": "VRBuilder.Core.Conditions.ObjectInColliderCondition+EntityData, VRBuilder.Core",
+                              "TargetObjects": {
+                                "$id": "281",
+                                "$type": "VRBuilder.Core.SceneObjects.MultipleSceneObjectReference, VRBuilder.Core",
+                                "guids": {
+                                  "$id": "282",
+                                  "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
+                                  "$values": [
+                                    "4914993c-6034-4128-9216-85e00fd87797"
+                                  ]
+                                }
+                              },
+                              "TriggerObject": {
+                                "$id": "283",
+                                "$type": "VRBuilder.Core.SceneObjects.SingleScenePropertyReference`1[[VRBuilder.Core.Properties.ColliderWithTriggerProperty, VRBuilder.Core]], VRBuilder.Core",
+                                "guids": {
+                                  "$id": "284",
+                                  "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
+                                  "$values": [
+                                    "bf3333c9-f94c-4c27-8697-e5d8f392d2a7"
+                                  ]
+                                }
+                              },
+                              "RequiredTimeInside": 0.0,
+                              "ObjectsRequiredInTrigger": 1.0,
+                              "Metadata": null
+                            }
+                          }
+                        ]
                       },
                       "TargetStep": null,
                       "Mode": null,
                       "IsCompleted": false,
-                      "Metadata": null
+                      "Metadata": {
+                        "$id": "285",
+                        "$type": "VRBuilder.Core.Metadata, VRBuilder.Core",
+                        "values": {
+                          "$id": "286",
+                          "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib]], mscorlib",
+                          "Conditions": {
+                            "$id": "287",
+                            "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+                            "VRBuilder.Core.Attributes.FoldableAttribute": true,
+                            "VRBuilder.Core.Attributes.ReorderableListOfAttribute": {
+                              "$id": "288",
+                              "$type": "VRBuilder.Core.Attributes.ListOfAttribute+Metadata, VRBuilder.Core",
+                              "ChildAttributes": {
+                                "$id": "289",
+                                "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.Attributes.MetadataAttribute, VRBuilder.Core]], mscorlib",
+                                "$values": [
+                                  {
+                                    "$id": "290",
+                                    "$type": "VRBuilder.Core.Attributes.FoldableAttribute, VRBuilder.Core",
+                                    "Name": "VRBuilder.Core.Attributes.FoldableAttribute",
+                                    "TypeId": "VRBuilder.Core.Attributes.FoldableAttribute, VRBuilder.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                                  },
+                                  {
+                                    "$id": "291",
+                                    "$type": "VRBuilder.Core.Attributes.HelpAttribute, VRBuilder.Core",
+                                    "Name": "VRBuilder.Core.Attributes.HelpAttribute",
+                                    "TypeId": "VRBuilder.Core.Attributes.HelpAttribute, VRBuilder.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                                  },
+                                  {
+                                    "$id": "292",
+                                    "$type": "VRBuilder.Core.Attributes.MenuAttribute, VRBuilder.Core",
+                                    "Name": "VRBuilder.Core.Attributes.MenuAttribute",
+                                    "TypeId": "VRBuilder.Core.Attributes.MenuAttribute, VRBuilder.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                                  }
+                                ]
+                              },
+                              "ChildMetadata": {
+                                "$id": "293",
+                                "$type": "System.Collections.Generic.List`1[[System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib]], mscorlib",
+                                "$values": [
+                                  {
+                                    "$id": "294",
+                                    "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+                                    "VRBuilder.Core.Attributes.FoldableAttribute": true,
+                                    "VRBuilder.Core.Attributes.HelpAttribute": null,
+                                    "VRBuilder.Core.Attributes.MenuAttribute": null,
+                                    "ReorderableElement": {
+                                      "$id": "295",
+                                      "$type": "VRBuilder.Core.UI.Drawers.Metadata.ReorderableElementMetadata, VRBuilder.Core",
+                                      "PendingAction": 0,
+                                      "IsFirst": true,
+                                      "IsLast": true
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            "VRBuilder.Core.Attributes.ExtendableListAttribute": {
+                              "$id": "296",
+                              "$type": "VRBuilder.Core.Attributes.ExtendableListAttribute+SerializedTypeWrapper, VRBuilder.Core",
+                              "Type": "VRBuilder.Core.Conditions.ICondition, VRBuilder.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                            }
+                          }
+                        }
+                      }
                     }
                   }
                 ]
@@ -1246,22 +1620,22 @@
           },
           "Mode": null,
           "ToUnlock": {
-            "$id": "229",
+            "$id": "297",
             "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.RestrictiveEnvironment.LockablePropertyReference, VRBuilder.Core]], mscorlib",
             "$values": []
           },
           "GroupsToUnlock": {
-            "$id": "230",
+            "$id": "298",
             "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, mscorlib],[System.Collections.Generic.IEnumerable`1[[System.Type, mscorlib]], mscorlib]], mscorlib"
           },
           "Metadata": null
         }
       },
       {
-        "$id": "231",
+        "$id": "299",
         "$type": "VRBuilder.Core.Step, VRBuilder.Core",
         "StepMetadata": {
-          "$id": "232",
+          "$id": "300",
           "$type": "VRBuilder.Core.StepMetadata, VRBuilder.Core",
           "Position": {
             "x": 120.0,
@@ -1271,31 +1645,31 @@
           "Guid": "f97bffe5-3d9a-4e72-aa82-93e48efc3d8b"
         },
         "Data": {
-          "$id": "233",
+          "$id": "301",
           "$type": "VRBuilder.Core.Step+EntityData, VRBuilder.Core",
           "Name": "Step",
           "Description": null,
           "Behaviors": {
-            "$id": "234",
+            "$id": "302",
             "$type": "VRBuilder.Core.BehaviorCollection, VRBuilder.Core",
             "Data": {
-              "$id": "235",
+              "$id": "303",
               "$type": "VRBuilder.Core.BehaviorCollection+EntityData, VRBuilder.Core",
               "Behaviors": {
-                "$id": "236",
+                "$id": "304",
                 "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.Behaviors.IBehavior, VRBuilder.Core]], mscorlib",
                 "$values": [
                   {
-                    "$id": "237",
+                    "$id": "305",
                     "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior, VRBuilder.Core",
                     "Data": {
-                      "$id": "238",
+                      "$id": "306",
                       "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior+EntityData, VRBuilder.Core",
                       "TargetObjects": {
-                        "$id": "239",
+                        "$id": "307",
                         "$type": "VRBuilder.Core.SceneObjects.MultipleSceneObjectReference, VRBuilder.Core",
                         "guids": {
-                          "$id": "240",
+                          "$id": "308",
                           "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
                           "$values": [
                             "84a6e412-47dc-49f1-a357-31d034f1ce9a"
@@ -1308,13 +1682,13 @@
                     }
                   },
                   {
-                    "$id": "241",
+                    "$id": "309",
                     "$type": "VRBuilder.Core.Behaviors.PlayAudioBehavior, VRBuilder.Core",
                     "Data": {
-                      "$id": "242",
+                      "$id": "310",
                       "$type": "VRBuilder.Core.Behaviors.PlayAudioBehavior+EntityData, VRBuilder.Core",
                       "AudioData": {
-                        "$id": "243",
+                        "$id": "311",
                         "$type": "VRBuilder.Core.TextToSpeech.TextToSpeechAudio, VRBuilder.Core",
                         "Text": "Moving onto step3 for Speed Adjustment.   This is the fan speed control knob.  You can turn it to Low, Medium, or High to adjust the airflow.  ",
                         "Speaker": ""
@@ -1326,16 +1700,16 @@
                     }
                   },
                   {
-                    "$id": "244",
+                    "$id": "312",
                     "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior, VRBuilder.Core",
                     "Data": {
-                      "$id": "245",
+                      "$id": "313",
                       "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior+EntityData, VRBuilder.Core",
                       "TargetObjects": {
-                        "$id": "246",
+                        "$id": "314",
                         "$type": "VRBuilder.Core.SceneObjects.MultipleSceneObjectReference, VRBuilder.Core",
                         "guids": {
-                          "$id": "247",
+                          "$id": "315",
                           "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
                           "$values": [
                             "492d3433-5a04-48f4-90d5-483450fd9d70"
@@ -1348,16 +1722,16 @@
                     }
                   },
                   {
-                    "$id": "248",
+                    "$id": "316",
                     "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior, VRBuilder.Core",
                     "Data": {
-                      "$id": "249",
+                      "$id": "317",
                       "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior+EntityData, VRBuilder.Core",
                       "TargetObjects": {
-                        "$id": "250",
+                        "$id": "318",
                         "$type": "VRBuilder.Core.SceneObjects.MultipleSceneObjectReference, VRBuilder.Core",
                         "guids": {
-                          "$id": "251",
+                          "$id": "319",
                           "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
                           "$values": [
                             "4d634649-d3bc-49c1-9e00-91527fc87655"
@@ -1370,16 +1744,16 @@
                     }
                   },
                   {
-                    "$id": "252",
+                    "$id": "320",
                     "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior, VRBuilder.Core",
                     "Data": {
-                      "$id": "253",
+                      "$id": "321",
                       "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior+EntityData, VRBuilder.Core",
                       "TargetObjects": {
-                        "$id": "254",
+                        "$id": "322",
                         "$type": "VRBuilder.Core.SceneObjects.MultipleSceneObjectReference, VRBuilder.Core",
                         "guids": {
-                          "$id": "255",
+                          "$id": "323",
                           "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
                           "$values": [
                             "4362676d-40d5-42a6-b074-ed71240ada65"
@@ -1392,16 +1766,16 @@
                     }
                   },
                   {
-                    "$id": "256",
+                    "$id": "324",
                     "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior, VRBuilder.Core",
                     "Data": {
-                      "$id": "257",
+                      "$id": "325",
                       "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior+EntityData, VRBuilder.Core",
                       "TargetObjects": {
-                        "$id": "258",
+                        "$id": "326",
                         "$type": "VRBuilder.Core.SceneObjects.MultipleSceneObjectReference, VRBuilder.Core",
                         "guids": {
-                          "$id": "259",
+                          "$id": "327",
                           "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
                           "$values": [
                             "786d38df-d5aa-4d48-a657-45869c8927f4"
@@ -1414,10 +1788,10 @@
                     }
                   },
                   {
-                    "$id": "260",
+                    "$id": "328",
                     "$type": "VRBuilder.Core.Behaviors.HighlightObjectBehavior, VRBuilder.Core",
                     "Data": {
-                      "$id": "261",
+                      "$id": "329",
                       "$type": "VRBuilder.Core.Behaviors.HighlightObjectBehavior+EntityData, VRBuilder.Core",
                       "HighlightColor": {
                         "r": 0.905882359,
@@ -1426,10 +1800,10 @@
                         "a": 0.494117647
                       },
                       "TargetObjects": {
-                        "$id": "262",
+                        "$id": "330",
                         "$type": "VRBuilder.Core.SceneObjects.MultipleScenePropertyReference`1[[VRBuilder.Core.Properties.IHighlightProperty, VRBuilder.Core]], VRBuilder.Core",
                         "guids": {
-                          "$id": "263",
+                          "$id": "331",
                           "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
                           "$values": [
                             "84a6e412-47dc-49f1-a357-31d034f1ce9a"
@@ -1444,32 +1818,32 @@
             }
           },
           "Transitions": {
-            "$id": "264",
+            "$id": "332",
             "$type": "VRBuilder.Core.TransitionCollection, VRBuilder.Core",
             "Data": {
-              "$id": "265",
+              "$id": "333",
               "$type": "VRBuilder.Core.TransitionCollection+EntityData, VRBuilder.Core",
               "Transitions": {
-                "$id": "266",
+                "$id": "334",
                 "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.ITransition, VRBuilder.Core]], mscorlib",
                 "$values": [
                   {
-                    "$id": "267",
+                    "$id": "335",
                     "$type": "VRBuilder.Core.Transition, VRBuilder.Core",
                     "Data": {
-                      "$id": "268",
+                      "$id": "336",
                       "$type": "VRBuilder.Core.Transition+EntityData, VRBuilder.Core",
                       "Conditions": {
-                        "$id": "269",
+                        "$id": "337",
                         "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.Conditions.ICondition, VRBuilder.Core]], mscorlib",
                         "$values": []
                       },
                       "TargetStep": {
-                        "$id": "270",
+                        "$id": "338",
                         "$type": "VRBuilder.Core.Serialization.NewtonsoftJsonProcessSerializerV4+Wrapper+StepRef, VRBuilder.Core",
                         "LifeCycle": null,
                         "StepMetadata": {
-                          "$id": "271",
+                          "$id": "339",
                           "$type": "VRBuilder.Core.StepMetadata, VRBuilder.Core",
                           "Position": {
                             "x": 0.0,
@@ -1491,12 +1865,519 @@
           },
           "Mode": null,
           "ToUnlock": {
-            "$id": "272",
+            "$id": "340",
             "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.RestrictiveEnvironment.LockablePropertyReference, VRBuilder.Core]], mscorlib",
             "$values": []
           },
           "GroupsToUnlock": {
-            "$id": "273",
+            "$id": "341",
+            "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, mscorlib],[System.Collections.Generic.IEnumerable`1[[System.Type, mscorlib]], mscorlib]], mscorlib"
+          },
+          "Metadata": null
+        }
+      },
+      {
+        "$id": "342",
+        "$type": "VRBuilder.Core.Step, VRBuilder.Core",
+        "StepMetadata": {
+          "$id": "343",
+          "$type": "VRBuilder.Core.StepMetadata, VRBuilder.Core",
+          "Position": {
+            "x": 120.0,
+            "y": -88.8
+          },
+          "StepType": "default",
+          "Guid": "1b42c962-0be0-45ab-85b0-4723fbf11ba2"
+        },
+        "Data": {
+          "$id": "344",
+          "$type": "VRBuilder.Core.Step+EntityData, VRBuilder.Core",
+          "Name": "Step",
+          "Description": null,
+          "Behaviors": {
+            "$id": "345",
+            "$type": "VRBuilder.Core.BehaviorCollection, VRBuilder.Core",
+            "Data": {
+              "$id": "346",
+              "$type": "VRBuilder.Core.BehaviorCollection+EntityData, VRBuilder.Core",
+              "Behaviors": {
+                "$id": "347",
+                "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.Behaviors.IBehavior, VRBuilder.Core]], mscorlib",
+                "$values": [
+                  {
+                    "$id": "348",
+                    "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior, VRBuilder.Core",
+                    "Data": {
+                      "$id": "349",
+                      "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior+EntityData, VRBuilder.Core",
+                      "TargetObjects": {
+                        "$id": "350",
+                        "$type": "VRBuilder.Core.SceneObjects.MultipleSceneObjectReference, VRBuilder.Core",
+                        "guids": {
+                          "$id": "351",
+                          "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
+                          "$values": [
+                            "6783cc12-75b2-47cc-9bf6-18626389a8fa"
+                          ]
+                        }
+                      },
+                      "SetEnabled": true,
+                      "RevertOnDeactivation": true,
+                      "Metadata": null
+                    }
+                  },
+                  {
+                    "$id": "352",
+                    "$type": "VRBuilder.Core.Behaviors.PlayAudioBehavior, VRBuilder.Core",
+                    "Data": {
+                      "$id": "353",
+                      "$type": "VRBuilder.Core.Behaviors.PlayAudioBehavior+EntityData, VRBuilder.Core",
+                      "AudioData": {
+                        "$id": "354",
+                        "$type": "VRBuilder.Core.TextToSpeech.TextToSpeechAudio, VRBuilder.Core",
+                        "Text": "   Grab a vent and tilt it up or down.  This changes the direction in which the air flows.",
+                        "Speaker": ""
+                      },
+                      "ExecutionStages": 1,
+                      "Volume": 1.0,
+                      "Metadata": null,
+                      "IsBlocking": true
+                    }
+                  },
+                  {
+                    "$id": "355",
+                    "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior, VRBuilder.Core",
+                    "Data": {
+                      "$id": "356",
+                      "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior+EntityData, VRBuilder.Core",
+                      "TargetObjects": {
+                        "$id": "357",
+                        "$type": "VRBuilder.Core.SceneObjects.MultipleSceneObjectReference, VRBuilder.Core",
+                        "guids": {
+                          "$id": "358",
+                          "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
+                          "$values": [
+                            "13e045c2-221b-42d4-b742-79f83896e4bf"
+                          ]
+                        }
+                      },
+                      "SetEnabled": true,
+                      "RevertOnDeactivation": true,
+                      "Metadata": null
+                    }
+                  },
+                  {
+                    "$id": "359",
+                    "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior, VRBuilder.Core",
+                    "Data": {
+                      "$id": "360",
+                      "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior+EntityData, VRBuilder.Core",
+                      "TargetObjects": {
+                        "$id": "361",
+                        "$type": "VRBuilder.Core.SceneObjects.MultipleSceneObjectReference, VRBuilder.Core",
+                        "guids": {
+                          "$id": "362",
+                          "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
+                          "$values": [
+                            "f8155f33-89e8-48ae-b174-288617eee58d"
+                          ]
+                        }
+                      },
+                      "SetEnabled": true,
+                      "RevertOnDeactivation": false,
+                      "Metadata": null
+                    }
+                  },
+                  {
+                    "$id": "363",
+                    "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior, VRBuilder.Core",
+                    "Data": {
+                      "$id": "364",
+                      "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior+EntityData, VRBuilder.Core",
+                      "TargetObjects": {
+                        "$id": "365",
+                        "$type": "VRBuilder.Core.SceneObjects.MultipleSceneObjectReference, VRBuilder.Core",
+                        "guids": {
+                          "$id": "366",
+                          "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
+                          "$values": [
+                            "4362676d-40d5-42a6-b074-ed71240ada65"
+                          ]
+                        }
+                      },
+                      "SetEnabled": false,
+                      "RevertOnDeactivation": false,
+                      "Metadata": null
+                    }
+                  },
+                  {
+                    "$id": "367",
+                    "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior, VRBuilder.Core",
+                    "Data": {
+                      "$id": "368",
+                      "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior+EntityData, VRBuilder.Core",
+                      "TargetObjects": {
+                        "$id": "369",
+                        "$type": "VRBuilder.Core.SceneObjects.MultipleSceneObjectReference, VRBuilder.Core",
+                        "guids": {
+                          "$id": "370",
+                          "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
+                          "$values": [
+                            "ddda1910-c9ac-4149-9c50-0367cb73a3a2"
+                          ]
+                        }
+                      },
+                      "SetEnabled": true,
+                      "RevertOnDeactivation": false,
+                      "Metadata": null
+                    }
+                  },
+                  {
+                    "$id": "371",
+                    "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior, VRBuilder.Core",
+                    "Data": {
+                      "$id": "372",
+                      "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior+EntityData, VRBuilder.Core",
+                      "TargetObjects": {
+                        "$id": "373",
+                        "$type": "VRBuilder.Core.SceneObjects.MultipleSceneObjectReference, VRBuilder.Core",
+                        "guids": {
+                          "$id": "374",
+                          "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
+                          "$values": [
+                            "ddda1910-c9ac-4149-9c50-0367cb73a3a2"
+                          ]
+                        }
+                      },
+                      "SetEnabled": false,
+                      "RevertOnDeactivation": false,
+                      "Metadata": null
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "Transitions": {
+            "$id": "375",
+            "$type": "VRBuilder.Core.TransitionCollection, VRBuilder.Core",
+            "Data": {
+              "$id": "376",
+              "$type": "VRBuilder.Core.TransitionCollection+EntityData, VRBuilder.Core",
+              "Transitions": {
+                "$id": "377",
+                "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.ITransition, VRBuilder.Core]], mscorlib",
+                "$values": [
+                  {
+                    "$id": "378",
+                    "$type": "VRBuilder.Core.Transition, VRBuilder.Core",
+                    "Data": {
+                      "$id": "379",
+                      "$type": "VRBuilder.Core.Transition+EntityData, VRBuilder.Core",
+                      "Conditions": {
+                        "$id": "380",
+                        "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.Conditions.ICondition, VRBuilder.Core]], mscorlib",
+                        "$values": [
+                          {
+                            "$id": "381",
+                            "$type": "VRBuilder.Core.Conditions.ObjectInColliderCondition, VRBuilder.Core",
+                            "Data": {
+                              "$id": "382",
+                              "$type": "VRBuilder.Core.Conditions.ObjectInColliderCondition+EntityData, VRBuilder.Core",
+                              "TargetObjects": {
+                                "$id": "383",
+                                "$type": "VRBuilder.Core.SceneObjects.MultipleSceneObjectReference, VRBuilder.Core",
+                                "guids": {
+                                  "$id": "384",
+                                  "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
+                                  "$values": [
+                                    "4914993c-6034-4128-9216-85e00fd87797"
+                                  ]
+                                }
+                              },
+                              "TriggerObject": {
+                                "$id": "385",
+                                "$type": "VRBuilder.Core.SceneObjects.SingleScenePropertyReference`1[[VRBuilder.Core.Properties.ColliderWithTriggerProperty, VRBuilder.Core]], VRBuilder.Core",
+                                "guids": {
+                                  "$id": "386",
+                                  "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
+                                  "$values": [
+                                    "bf3333c9-f94c-4c27-8697-e5d8f392d2a7"
+                                  ]
+                                }
+                              },
+                              "RequiredTimeInside": 0.0,
+                              "ObjectsRequiredInTrigger": 1.0,
+                              "Metadata": null
+                            }
+                          }
+                        ]
+                      },
+                      "TargetStep": null,
+                      "Mode": null,
+                      "IsCompleted": false,
+                      "Metadata": null
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "Mode": null,
+          "ToUnlock": {
+            "$id": "387",
+            "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.RestrictiveEnvironment.LockablePropertyReference, VRBuilder.Core]], mscorlib",
+            "$values": []
+          },
+          "GroupsToUnlock": {
+            "$id": "388",
+            "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, mscorlib],[System.Collections.Generic.IEnumerable`1[[System.Type, mscorlib]], mscorlib]], mscorlib"
+          },
+          "Metadata": null
+        }
+      },
+      {
+        "$id": "389",
+        "$type": "VRBuilder.Core.Step, VRBuilder.Core",
+        "StepMetadata": {
+          "$id": "390",
+          "$type": "VRBuilder.Core.StepMetadata, VRBuilder.Core",
+          "Position": {
+            "x": 120.0,
+            "y": -204.0
+          },
+          "StepType": "default",
+          "Guid": "3d0ff83d-12b5-438c-b52e-47c70e4dabc5"
+        },
+        "Data": {
+          "$id": "391",
+          "$type": "VRBuilder.Core.Step+EntityData, VRBuilder.Core",
+          "Name": "Step",
+          "Description": null,
+          "Behaviors": {
+            "$id": "392",
+            "$type": "VRBuilder.Core.BehaviorCollection, VRBuilder.Core",
+            "Data": {
+              "$id": "393",
+              "$type": "VRBuilder.Core.BehaviorCollection+EntityData, VRBuilder.Core",
+              "Behaviors": {
+                "$id": "394",
+                "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.Behaviors.IBehavior, VRBuilder.Core]], mscorlib",
+                "$values": [
+                  {
+                    "$id": "395",
+                    "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior, VRBuilder.Core",
+                    "Data": {
+                      "$id": "396",
+                      "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior+EntityData, VRBuilder.Core",
+                      "TargetObjects": {
+                        "$id": "397",
+                        "$type": "VRBuilder.Core.SceneObjects.MultipleSceneObjectReference, VRBuilder.Core",
+                        "guids": {
+                          "$id": "398",
+                          "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
+                          "$values": [
+                            "c1b24c40-27b5-4b27-bc03-f666d5a66614"
+                          ]
+                        }
+                      },
+                      "SetEnabled": true,
+                      "RevertOnDeactivation": false,
+                      "Metadata": null
+                    }
+                  },
+                  {
+                    "$id": "399",
+                    "$type": "VRBuilder.Core.Behaviors.PlayAudioBehavior, VRBuilder.Core",
+                    "Data": {
+                      "$id": "400",
+                      "$type": "VRBuilder.Core.Behaviors.PlayAudioBehavior+EntityData, VRBuilder.Core",
+                      "AudioData": {
+                        "$id": "401",
+                        "$type": "VRBuilder.Core.TextToSpeech.TextToSpeechAudio, VRBuilder.Core",
+                        "Text": "Step 4.   These are the air vents at the front of the cooler.  You can adjust them to change the direction of the airflow.",
+                        "Speaker": ""
+                      },
+                      "ExecutionStages": 1,
+                      "Volume": 1.0,
+                      "Metadata": null,
+                      "IsBlocking": true
+                    }
+                  },
+                  {
+                    "$id": "402",
+                    "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior, VRBuilder.Core",
+                    "Data": {
+                      "$id": "403",
+                      "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior+EntityData, VRBuilder.Core",
+                      "TargetObjects": {
+                        "$id": "404",
+                        "$type": "VRBuilder.Core.SceneObjects.MultipleSceneObjectReference, VRBuilder.Core",
+                        "guids": {
+                          "$id": "405",
+                          "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
+                          "$values": [
+                            "4fab23d9-6afe-4e98-8613-e8abde58b101"
+                          ]
+                        }
+                      },
+                      "SetEnabled": true,
+                      "RevertOnDeactivation": true,
+                      "Metadata": null
+                    }
+                  },
+                  {
+                    "$id": "406",
+                    "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior, VRBuilder.Core",
+                    "Data": {
+                      "$id": "407",
+                      "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior+EntityData, VRBuilder.Core",
+                      "TargetObjects": {
+                        "$id": "408",
+                        "$type": "VRBuilder.Core.SceneObjects.MultipleSceneObjectReference, VRBuilder.Core",
+                        "guids": {
+                          "$id": "409",
+                          "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
+                          "$values": [
+                            "4362676d-40d5-42a6-b074-ed71240ada65"
+                          ]
+                        }
+                      },
+                      "SetEnabled": false,
+                      "RevertOnDeactivation": false,
+                      "Metadata": null
+                    }
+                  },
+                  {
+                    "$id": "410",
+                    "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior, VRBuilder.Core",
+                    "Data": {
+                      "$id": "411",
+                      "$type": "VRBuilder.Core.Behaviors.SetObjectsEnabledBehavior+EntityData, VRBuilder.Core",
+                      "TargetObjects": {
+                        "$id": "412",
+                        "$type": "VRBuilder.Core.SceneObjects.MultipleSceneObjectReference, VRBuilder.Core",
+                        "guids": {
+                          "$id": "413",
+                          "$type": "System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib",
+                          "$values": [
+                            "f8155f33-89e8-48ae-b174-288617eee58d"
+                          ]
+                        }
+                      },
+                      "SetEnabled": true,
+                      "RevertOnDeactivation": false,
+                      "Metadata": null
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "Transitions": {
+            "$id": "414",
+            "$type": "VRBuilder.Core.TransitionCollection, VRBuilder.Core",
+            "Data": {
+              "$id": "415",
+              "$type": "VRBuilder.Core.TransitionCollection+EntityData, VRBuilder.Core",
+              "Transitions": {
+                "$id": "416",
+                "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.ITransition, VRBuilder.Core]], mscorlib",
+                "$values": [
+                  {
+                    "$id": "417",
+                    "$type": "VRBuilder.Core.Transition, VRBuilder.Core",
+                    "Data": {
+                      "$id": "418",
+                      "$type": "VRBuilder.Core.Transition+EntityData, VRBuilder.Core",
+                      "Conditions": {
+                        "$id": "419",
+                        "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.Conditions.ICondition, VRBuilder.Core]], mscorlib",
+                        "$values": []
+                      },
+                      "TargetStep": {
+                        "$id": "420",
+                        "$type": "VRBuilder.Core.Serialization.NewtonsoftJsonProcessSerializerV4+Wrapper+StepRef, VRBuilder.Core",
+                        "LifeCycle": null,
+                        "StepMetadata": {
+                          "$id": "421",
+                          "$type": "VRBuilder.Core.StepMetadata, VRBuilder.Core",
+                          "Position": {
+                            "x": 0.0,
+                            "y": 0.0
+                          },
+                          "StepType": null,
+                          "Guid": "1b42c962-0be0-45ab-85b0-4723fbf11ba2"
+                        },
+                        "Parent": null
+                      },
+                      "Mode": null,
+                      "IsCompleted": false,
+                      "Metadata": {
+                        "$id": "422",
+                        "$type": "VRBuilder.Core.Metadata, VRBuilder.Core",
+                        "values": {
+                          "$id": "423",
+                          "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib]], mscorlib",
+                          "Conditions": {
+                            "$id": "424",
+                            "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+                            "VRBuilder.Core.Attributes.FoldableAttribute": true,
+                            "VRBuilder.Core.Attributes.ReorderableListOfAttribute": {
+                              "$id": "425",
+                              "$type": "VRBuilder.Core.Attributes.ListOfAttribute+Metadata, VRBuilder.Core",
+                              "ChildAttributes": {
+                                "$id": "426",
+                                "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.Attributes.MetadataAttribute, VRBuilder.Core]], mscorlib",
+                                "$values": [
+                                  {
+                                    "$id": "427",
+                                    "$type": "VRBuilder.Core.Attributes.FoldableAttribute, VRBuilder.Core",
+                                    "Name": "VRBuilder.Core.Attributes.FoldableAttribute",
+                                    "TypeId": "VRBuilder.Core.Attributes.FoldableAttribute, VRBuilder.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                                  },
+                                  {
+                                    "$id": "428",
+                                    "$type": "VRBuilder.Core.Attributes.HelpAttribute, VRBuilder.Core",
+                                    "Name": "VRBuilder.Core.Attributes.HelpAttribute",
+                                    "TypeId": "VRBuilder.Core.Attributes.HelpAttribute, VRBuilder.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                                  },
+                                  {
+                                    "$id": "429",
+                                    "$type": "VRBuilder.Core.Attributes.MenuAttribute, VRBuilder.Core",
+                                    "Name": "VRBuilder.Core.Attributes.MenuAttribute",
+                                    "TypeId": "VRBuilder.Core.Attributes.MenuAttribute, VRBuilder.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                                  }
+                                ]
+                              },
+                              "ChildMetadata": {
+                                "$id": "430",
+                                "$type": "System.Collections.Generic.List`1[[System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib]], mscorlib",
+                                "$values": []
+                              }
+                            },
+                            "VRBuilder.Core.Attributes.ExtendableListAttribute": {
+                              "$id": "431",
+                              "$type": "VRBuilder.Core.Attributes.ExtendableListAttribute+SerializedTypeWrapper, VRBuilder.Core",
+                              "Type": "VRBuilder.Core.Conditions.ICondition, VRBuilder.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "Mode": null,
+          "ToUnlock": {
+            "$id": "432",
+            "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.RestrictiveEnvironment.LockablePropertyReference, VRBuilder.Core]], mscorlib",
+            "$values": []
+          },
+          "GroupsToUnlock": {
+            "$id": "433",
             "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, mscorlib],[System.Collections.Generic.IEnumerable`1[[System.Type, mscorlib]], mscorlib]], mscorlib"
           },
           "Metadata": null
@@ -1505,27 +2386,27 @@
     ]
   },
   "Process": {
-    "$id": "274",
+    "$id": "434",
     "$type": "VRBuilder.Core.Process, VRBuilder.Core",
     "CurrentStep": null,
     "ProcessMetadata": {
-      "$id": "275",
+      "$id": "435",
       "$type": "VRBuilder.Core.ProcessMetadata, VRBuilder.Core",
       "StringLocalizationTable": null,
       "Guid": "a3d7fca1-07e8-4997-b8d6-eaa8bb14b1c3"
     },
     "Data": {
-      "$id": "276",
+      "$id": "436",
       "$type": "VRBuilder.Core.Process+EntityData, VRBuilder.Core",
       "Chapters": {
-        "$id": "277",
+        "$id": "437",
         "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.IChapter, VRBuilder.Core]], mscorlib",
         "$values": [
           {
-            "$id": "278",
+            "$id": "438",
             "$type": "VRBuilder.Core.Chapter, VRBuilder.Core",
             "ChapterMetadata": {
-              "$id": "279",
+              "$id": "439",
               "$type": "VRBuilder.Core.ChapterMetadata, VRBuilder.Core",
               "LastSelectedStep": null,
               "EntryNodePosition": {
@@ -1534,7 +2415,7 @@
               },
               "Guid": "e4097ffc-da45-4fac-9398-a588550363b6",
               "ViewTransform": {
-                "$id": "280",
+                "$id": "440",
                 "$type": "VRBuilder.Core.ViewTransform, VRBuilder.Core",
                 "Position": {
                   "x": 516.8,
@@ -1549,14 +2430,14 @@
               }
             },
             "Data": {
-              "$id": "281",
+              "$id": "441",
               "$type": "VRBuilder.Core.Chapter+EntityData, VRBuilder.Core",
               "Name": "SwitchPlugStep - Copy",
               "FirstStep": {
                 "$ref": "4"
               },
               "Steps": {
-                "$id": "282",
+                "$id": "442",
                 "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.IStep, VRBuilder.Core]], mscorlib",
                 "$values": [
                   {
@@ -1567,10 +2448,10 @@
             }
           },
           {
-            "$id": "283",
+            "$id": "443",
             "$type": "VRBuilder.Core.Chapter, VRBuilder.Core",
             "ChapterMetadata": {
-              "$id": "284",
+              "$id": "444",
               "$type": "VRBuilder.Core.ChapterMetadata, VRBuilder.Core",
               "LastSelectedStep": null,
               "EntryNodePosition": {
@@ -1579,43 +2460,46 @@
               },
               "Guid": "82e49ba3-e405-4c9c-8f86-a73c31c8c035",
               "ViewTransform": {
-                "$id": "285",
+                "$id": "445",
                 "$type": "VRBuilder.Core.ViewTransform, VRBuilder.Core",
                 "Position": {
-                  "x": 211.2,
-                  "y": 131.2,
+                  "x": 376.0,
+                  "y": 231.2,
                   "z": 0.0
                 },
                 "Scale": {
-                  "x": 1.74900627,
-                  "y": 1.74900627,
+                  "x": 0.8695652,
+                  "y": 0.8695652,
                   "z": 1.0
                 }
               }
             },
             "Data": {
-              "$id": "286",
+              "$id": "446",
               "$type": "VRBuilder.Core.Chapter+EntityData, VRBuilder.Core",
               "Name": "SwitchPlugStep",
               "FirstStep": {
-                "$ref": "44"
+                "$ref": "87"
               },
               "Steps": {
-                "$id": "287",
+                "$id": "447",
                 "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.IStep, VRBuilder.Core]], mscorlib",
                 "$values": [
                   {
                     "$ref": "44"
+                  },
+                  {
+                    "$ref": "87"
                   }
                 ]
               }
             }
           },
           {
-            "$id": "288",
+            "$id": "448",
             "$type": "VRBuilder.Core.Chapter, VRBuilder.Core",
             "ChapterMetadata": {
-              "$id": "289",
+              "$id": "449",
               "$type": "VRBuilder.Core.ChapterMetadata, VRBuilder.Core",
               "LastSelectedStep": null,
               "EntryNodePosition": {
@@ -1624,49 +2508,52 @@
               },
               "Guid": "45c4e5fd-129e-418b-831b-0a943bd2b823",
               "ViewTransform": {
-                "$id": "290",
+                "$id": "450",
                 "$type": "VRBuilder.Core.ViewTransform, VRBuilder.Core",
                 "Position": {
-                  "x": 543.2,
-                  "y": 131.2,
+                  "x": 149.6,
+                  "y": 207.2,
                   "z": 0.0
                 },
                 "Scale": {
-                  "x": 0.25,
-                  "y": 0.25,
+                  "x": 1.15,
+                  "y": 1.15,
                   "z": 1.0
                 }
               }
             },
             "Data": {
-              "$id": "291",
+              "$id": "451",
               "$type": "VRBuilder.Core.Chapter+EntityData, VRBuilder.Core",
               "Name": "Chapter 2",
               "FirstStep": {
-                "$ref": "124"
+                "$ref": "147"
               },
               "Steps": {
-                "$id": "292",
+                "$id": "452",
                 "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.IStep, VRBuilder.Core]], mscorlib",
                 "$values": [
                   {
-                    "$ref": "87"
+                    "$ref": "112"
                   },
                   {
-                    "$ref": "124"
+                    "$ref": "147"
                   },
                   {
-                    "$ref": "169"
+                    "$ref": "192"
+                  },
+                  {
+                    "$ref": "221"
                   }
                 ]
               }
             }
           },
           {
-            "$id": "293",
+            "$id": "453",
             "$type": "VRBuilder.Core.Chapter, VRBuilder.Core",
             "ChapterMetadata": {
-              "$id": "294",
+              "$id": "454",
               "$type": "VRBuilder.Core.ChapterMetadata, VRBuilder.Core",
               "LastSelectedStep": null,
               "EntryNodePosition": {
@@ -1675,7 +2562,7 @@
               },
               "Guid": "3c49833a-ec3a-47be-b47c-8fcc0bf408f7",
               "ViewTransform": {
-                "$id": "295",
+                "$id": "455",
                 "$type": "VRBuilder.Core.ViewTransform, VRBuilder.Core",
                 "Position": {
                   "x": 560.0,
@@ -1690,21 +2577,69 @@
               }
             },
             "Data": {
-              "$id": "296",
+              "$id": "456",
               "$type": "VRBuilder.Core.Chapter+EntityData, VRBuilder.Core",
               "Name": "Chapter 2 - Copy",
               "FirstStep": {
-                "$ref": "231"
+                "$ref": "299"
               },
               "Steps": {
-                "$id": "297",
+                "$id": "457",
                 "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.IStep, VRBuilder.Core]], mscorlib",
                 "$values": [
                   {
-                    "$ref": "198"
+                    "$ref": "248"
                   },
                   {
-                    "$ref": "231"
+                    "$ref": "299"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "$id": "458",
+            "$type": "VRBuilder.Core.Chapter, VRBuilder.Core",
+            "ChapterMetadata": {
+              "$id": "459",
+              "$type": "VRBuilder.Core.ChapterMetadata, VRBuilder.Core",
+              "LastSelectedStep": null,
+              "EntryNodePosition": {
+                "x": -109.6,
+                "y": -204.0
+              },
+              "Guid": "c7acbd2b-198d-4395-ab3d-6e6c2b3c09d0",
+              "ViewTransform": {
+                "$id": "460",
+                "$type": "VRBuilder.Core.ViewTransform, VRBuilder.Core",
+                "Position": {
+                  "x": 303.2,
+                  "y": 235.2,
+                  "z": 0.0
+                },
+                "Scale": {
+                  "x": 0.25,
+                  "y": 0.25,
+                  "z": 1.0
+                }
+              }
+            },
+            "Data": {
+              "$id": "461",
+              "$type": "VRBuilder.Core.Chapter+EntityData, VRBuilder.Core",
+              "Name": "Chapter 2 - Copy - Copy",
+              "FirstStep": {
+                "$ref": "389"
+              },
+              "Steps": {
+                "$id": "462",
+                "$type": "System.Collections.Generic.List`1[[VRBuilder.Core.IStep, VRBuilder.Core]], mscorlib",
+                "$values": [
+                  {
+                    "$ref": "342"
+                  },
+                  {
+                    "$ref": "389"
                   }
                 ]
               }
@@ -1713,7 +2648,7 @@
         ]
       },
       "FirstChapter": {
-        "$ref": "278"
+        "$ref": "438"
       },
       "Name": "Cooler Onboarding Process",
       "Mode": null,
