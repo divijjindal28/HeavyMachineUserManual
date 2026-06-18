@@ -11,7 +11,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 83f5637088bb4837aa3f06541493fd58, type: 3}
   m_Name: LifeCycleLoggingConfig
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: VRBuilder.Core::VRBuilder.Core.Utils.Logging.LifeCycleLoggingConfig
   LogBehaviors: 0
   LogConditions: 0
   LogChapters: 1

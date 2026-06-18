@@ -11,7 +11,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71a2cbcb13cb436e804d531ae08850a1, type: 3}
   m_Name: TextToSpeechSettings
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: VRBuilder.Core::VRBuilder.Core.TextToSpeech.TextToSpeechSettings
   StreamingAssetCacheDirectoryName: TextToSpeech
   GenerateAudioInBuildingProcess: 1
   IgnoreExistingTextToSpeechFiles: 0

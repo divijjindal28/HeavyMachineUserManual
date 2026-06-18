@@ -1,0 +1,1 @@
+This file indicates that the sample 'Demo - Core Features' was setup on 2026-06-15 17:23:31.

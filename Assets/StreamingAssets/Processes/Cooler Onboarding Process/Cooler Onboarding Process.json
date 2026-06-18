@@ -709,8 +709,8 @@
           "$id": "131",
           "$type": "VRBuilder.Core.StepMetadata, VRBuilder.Core",
           "Position": {
-            "x": 409.6,
-            "y": -355.2
+            "x": 120.0,
+            "y": 98.4
           },
           "StepType": "default",
           "Guid": "e06bf158-b46a-49b3-9b4c-c560911b5e5c"
@@ -5994,13 +5994,13 @@
                 "$id": "1080",
                 "$type": "VRBuilder.Core.ViewTransform, VRBuilder.Core",
                 "Position": {
-                  "x": 516.8,
-                  "y": 172.0,
+                  "x": 230.4,
+                  "y": 128.8,
                   "z": 0.0
                 },
                 "Scale": {
-                  "x": 0.25,
-                  "y": 0.25,
+                  "x": 0.497176737,
+                  "y": 0.497176737,
                   "z": 1.0
                 }
               }
@@ -6087,13 +6087,13 @@
                 "$id": "1090",
                 "$type": "VRBuilder.Core.ViewTransform, VRBuilder.Core",
                 "Position": {
-                  "x": 149.6,
-                  "y": 207.2,
+                  "x": 156.0,
+                  "y": 124.0,
                   "z": 0.0
                 },
                 "Scale": {
-                  "x": 1.15,
-                  "y": 1.15,
+                  "x": 0.8695652,
+                  "y": 0.8695652,
                   "z": 1.0
                 }
               }
@@ -6173,13 +6173,13 @@
                 "$id": "1099",
                 "$type": "VRBuilder.Core.ViewTransform, VRBuilder.Core",
                 "Position": {
-                  "x": 560.0,
-                  "y": 95.2,
+                  "x": 269.6,
+                  "y": 213.6,
                   "z": 0.0
                 },
                 "Scale": {
-                  "x": 0.2842624,
-                  "y": 0.2842624,
+                  "x": 0.7561437,
+                  "y": 0.7561437,
                   "z": 1.0
                 }
               }
@@ -6221,13 +6221,13 @@
                 "$id": "1104",
                 "$type": "VRBuilder.Core.ViewTransform, VRBuilder.Core",
                 "Position": {
-                  "x": 472.8,
-                  "y": 204.0,
+                  "x": 392.8,
+                  "y": 238.4,
                   "z": 0.0
                 },
                 "Scale": {
-                  "x": 0.2842624,
-                  "y": 0.2842624,
+                  "x": 0.7561437,
+                  "y": 0.7561437,
                   "z": 1.0
                 }
               }
