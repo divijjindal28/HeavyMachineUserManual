@@ -18,6 +18,9 @@ public class SimpleVoiceAssistant : MonoBehaviour
     [SerializeField] private TMP_InputField transcriptInputField;
     [SerializeField] private TMP_Text responseText;
     [SerializeField] private PointableUnityEventWrapper pointableWrapper;
+    [SerializeField] private GameObject UI;
+    [SerializeField] private GameObject TeachingObjects;
+    [SerializeField] private TextMeshProUGUI AIButtonText;
 
     private bool isListening = false;
     private bool waitingForTranscript = false;
@@ -103,6 +106,17 @@ public class SimpleVoiceAssistant : MonoBehaviour
      //   _ = llmAgent.SendPromptAsync(parentPrompt, null);
     }
 
+    private void DisableAllObjects()
+    {
+        foreach (Transform child in UI.transform)
+        {
+            child.gameObject.SetActive(false);
+        }
+        foreach (Transform child in TeachingObjects.transform)
+        {
+            child.gameObject.SetActive(false);
+        }
+    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space)) { Debug.Log("[INPUT] Space pressed"); OnMicButtonPressed(); }
@@ -113,10 +127,18 @@ public class SimpleVoiceAssistant : MonoBehaviour
         if (!isListening)
         {
             StartListening();
+            if (AIButtonText != null)
+            {
+                AIButtonText.text = "...";
+            }
         }
         else
         {
             StopListening();
+            if (AIButtonText != null)
+            {
+                AIButtonText.text = "AI";
+            }
         }
     }
 
@@ -287,7 +309,9 @@ public class SimpleVoiceAssistant : MonoBehaviour
         Debug.Log("[SimpleVoiceAssistant] : LOCAL = " + localClassification);
         Debug.Log("[SimpleVoiceAssistant] : FINAL = " + finalResponse);
 
-        JumpToChapter(finalResponse);
+        DisableAllObjects();
+        //Changed to Local Classification to avoid LLM misclassification issues.
+        JumpToChapter(localClassification);
 
         if (buttonText != null)
         {
